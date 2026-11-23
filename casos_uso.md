@@ -22,7 +22,7 @@
 
 ### Regras de Negócio
 1. Um time vence com 12 pontos
-
+2. Um jogador fica do lado oposto da sua dupla, entre os dois adversários.
 
 
 ## UC-02: Jogar Carta
@@ -77,7 +77,7 @@
 ### Fluxo Principal
 1. Cada um dos jogadores faz sua jogada do turno
 2. A dupla cujo jogador jogou a carta mais forte vence o turno
-2. Um novo turno se inicia
+3. Um novo turno se inicia
 
 ### Fluxos Alternativos
 1. Se um dupla atingir 2 pontos de turno, os pontos de turno são zerados, a dupla recebe os pontos da rodada e uma nova rodada se inicia
