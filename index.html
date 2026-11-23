@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Truco Paulista</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <div><h1>Truco Paulista</h1><p>Mão: <strong id="hand-value">1</strong> ponto · <span id="turn-label">Sua vez</span></p></div>
+    <div class="scores"><div>Você + parceiro <b id="human-score">0</b></div><div>Adversários <b id="bot-score">0</b></div></div>
+  </header>
+  <main>
+    <div class="toolbar"><span id="round-label">Rodada 1 · Turno 1</span><button class="button secondary" id="new-game">Nova partida</button></div>
+    <section class="table">
+      <div class="player top" id="player-1"><div class="hand"></div><div class="avatar">🤖</div><small>Parceiro</small></div>
+      <div class="player left" id="player-2"><div class="hand"></div><div class="avatar">🤖</div><small>Rival 1</small></div>
+      <div class="player right" id="player-3"><div class="hand"></div><div class="avatar">🤖</div><small>Rival 2</small></div>
+      <div class="player bottom" id="player-0"><small>Você</small><div class="avatar">🙂</div><div class="hand"></div></div>
+      <div class="center-area"><div class="vira"><h3>Vira</h3><div id="vira-card"></div><small id="manilha-label"></small></div><div><h3 class="table-title">Mesa</h3><div class="played" id="played-cards"></div></div></div>
+    </section>
+    <div class="actions"><button class="button" id="raise-button">Pedir Truco</button><button class="button secondary" id="covered-button">Carta coberta</button></div>
+    <section class="log"><h2>Registro da partida</h2><div id="game-log"></div></section>
+  </main>
+  <dialog id="response-dialog"><h2>Pedido de aumento</h2><p id="response-text"></p><div class="dialog-actions"><button class="button" id="accept-button">Aceitar</button><button class="button" id="increase-button">Aumentar</button><button class="button danger" id="run-button">Correr</button></div></dialog>
+  <dialog id="end-dialog"><h2 id="end-title"></h2><p id="end-text"></p><button class="button" id="restart-button">Jogar novamente</button></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
